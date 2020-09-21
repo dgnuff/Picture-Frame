@@ -1,0 +1,5 @@
+data\test2.png;40,0,720,450
+@data\list16x10.txt
+data\DSC00009.JPG;0,39,1024,640
+data\DSC01095.JPG;247,506,1103,689
+data\angels.jpg;138,148,530,331

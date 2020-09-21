@@ -1,0 +1,467 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Shaders">
+      <UniqueIdentifier>{5f98958e-f75a-4d36-b02b-4e6a41770b3e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\DVeffects">
+      <UniqueIdentifier>{3a0d5af3-05a4-40ef-8e6e-ff88d443ffe4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Peffects">
+      <UniqueIdentifier>{868018ed-8b4f-4617-a87c-2aed1de077cc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\SVeffects">
+      <UniqueIdentifier>{81f04697-07f3-4cd8-a41a-c94c790be89a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Voronoi">
+      <UniqueIdentifier>{f56c6d3a-daaa-4e04-b308-e0b32e38ff40}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="sspf.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="loader.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pch.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="peffect.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="util.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="veffect.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DVeffects\dveff1.cpp">
+      <Filter>Source Files\DVeffects</Filter>
+    </ClCompile>
+    <ClCompile Include="DVeffects\dveff2.cpp">
+      <Filter>Source Files\DVeffects</Filter>
+    </ClCompile>
+    <ClCompile Include="DVeffects\dveff3.cpp">
+      <Filter>Source Files\DVeffects</Filter>
+    </ClCompile>
+    <ClCompile Include="DVeffects\dveff4.cpp">
+      <Filter>Source Files\DVeffects</Filter>
+    </ClCompile>
+    <ClCompile Include="DVeffects\dveff5.cpp">
+      <Filter>Source Files\DVeffects</Filter>
+    </ClCompile>
+    <ClCompile Include="DVeffects\dveff6.cpp">
+      <Filter>Source Files\DVeffects</Filter>
+    </ClCompile>
+    <ClCompile Include="DVeffects\dveff7.cpp">
+      <Filter>Source Files\DVeffects</Filter>
+    </ClCompile>
+    <ClCompile Include="DVeffects\dveff8.cpp">
+      <Filter>Source Files\DVeffects</Filter>
+    </ClCompile>
+    <ClCompile Include="DVeffects\dveff9.cpp">
+      <Filter>Source Files\DVeffects</Filter>
+    </ClCompile>
+    <ClCompile Include="DVeffects\dveff10.cpp">
+      <Filter>Source Files\DVeffects</Filter>
+    </ClCompile>
+    <ClCompile Include="DVeffects\dveff11.cpp">
+      <Filter>Source Files\DVeffects</Filter>
+    </ClCompile>
+    <ClCompile Include="DVeffects\dveff12.cpp">
+      <Filter>Source Files\DVeffects</Filter>
+    </ClCompile>
+    <ClCompile Include="DVeffects\dveff13.cpp">
+      <Filter>Source Files\DVeffects</Filter>
+    </ClCompile>
+    <ClCompile Include="DVeffects\dveff14.cpp">
+      <Filter>Source Files\DVeffects</Filter>
+    </ClCompile>
+    <ClCompile Include="DVeffects\dveff15.cpp">
+      <Filter>Source Files\DVeffects</Filter>
+    </ClCompile>
+    <ClCompile Include="Voronoi\VoronoiDiagramGenerator.cpp">
+      <Filter>Source Files\Voronoi</Filter>
+    </ClCompile>
+    <ClCompile Include="SVeffects\sveff28.cpp">
+      <Filter>Source Files\SVeffects</Filter>
+    </ClCompile>
+    <ClCompile Include="SVeffects\sveff29.cpp">
+      <Filter>Source Files\SVeffects</Filter>
+    </ClCompile>
+    <ClCompile Include="SVeffects\sveff30.cpp">
+      <Filter>Source Files\SVeffects</Filter>
+    </ClCompile>
+    <ClCompile Include="SVeffects\sveff31.cpp">
+      <Filter>Source Files\SVeffects</Filter>
+    </ClCompile>
+    <ClCompile Include="SVeffects\sveff32.cpp">
+      <Filter>Source Files\SVeffects</Filter>
+    </ClCompile>
+    <ClCompile Include="SVeffects\sveff33.cpp">
+      <Filter>Source Files\SVeffects</Filter>
+    </ClCompile>
+    <ClCompile Include="SVeffects\sveff34.cpp">
+      <Filter>Source Files\SVeffects</Filter>
+    </ClCompile>
+    <ClCompile Include="SVeffects\sveff35.cpp">
+      <Filter>Source Files\SVeffects</Filter>
+    </ClCompile>
+    <ClCompile Include="SVeffects\sveff36.cpp">
+      <Filter>Source Files\SVeffects</Filter>
+    </ClCompile>
+    <ClCompile Include="SVeffects\sveff37.cpp">
+      <Filter>Source Files\SVeffects</Filter>
+    </ClCompile>
+    <ClCompile Include="SVeffects\sveff38.cpp">
+      <Filter>Source Files\SVeffects</Filter>
+    </ClCompile>
+    <ClCompile Include="SVeffects\sveff39.cpp">
+      <Filter>Source Files\SVeffects</Filter>
+    </ClCompile>
+    <ClCompile Include="SVeffects\sveff40.cpp">
+      <Filter>Source Files\SVeffects</Filter>
+    </ClCompile>
+    <ClCompile Include="SVeffects\sveff41.cpp">
+      <Filter>Source Files\SVeffects</Filter>
+    </ClCompile>
+    <ClCompile Include="SVeffects\sveff42.cpp">
+      <Filter>Source Files\SVeffects</Filter>
+    </ClCompile>
+    <ClCompile Include="SVeffects\sveff1.cpp">
+      <Filter>Source Files\SVeffects</Filter>
+    </ClCompile>
+    <ClCompile Include="SVeffects\sveff2.cpp">
+      <Filter>Source Files\SVeffects</Filter>
+    </ClCompile>
+    <ClCompile Include="SVeffects\sveff3.cpp">
+      <Filter>Source Files\SVeffects</Filter>
+    </ClCompile>
+    <ClCompile Include="SVeffects\sveff4.cpp">
+      <Filter>Source Files\SVeffects</Filter>
+    </ClCompile>
+    <ClCompile Include="SVeffects\sveff5.cpp">
+      <Filter>Source Files\SVeffects</Filter>
+    </ClCompile>
+    <ClCompile Include="SVeffects\sveff6.cpp">
+      <Filter>Source Files\SVeffects</Filter>
+    </ClCompile>
+    <ClCompile Include="SVeffects\sveff7.cpp">
+      <Filter>Source Files\SVeffects</Filter>
+    </ClCompile>
+    <ClCompile Include="SVeffects\sveff8.cpp">
+      <Filter>Source Files\SVeffects</Filter>
+    </ClCompile>
+    <ClCompile Include="SVeffects\sveff9.cpp">
+      <Filter>Source Files\SVeffects</Filter>
+    </ClCompile>
+    <ClCompile Include="SVeffects\sveff10.cpp">
+      <Filter>Source Files\SVeffects</Filter>
+    </ClCompile>
+    <ClCompile Include="SVeffects\sveff11.cpp">
+      <Filter>Source Files\SVeffects</Filter>
+    </ClCompile>
+    <ClCompile Include="SVeffects\sveff12.cpp">
+      <Filter>Source Files\SVeffects</Filter>
+    </ClCompile>
+    <ClCompile Include="SVeffects\sveff13.cpp">
+      <Filter>Source Files\SVeffects</Filter>
+    </ClCompile>
+    <ClCompile Include="SVeffects\sveff14.cpp">
+      <Filter>Source Files\SVeffects</Filter>
+    </ClCompile>
+    <ClCompile Include="SVeffects\sveff15.cpp">
+      <Filter>Source Files\SVeffects</Filter>
+    </ClCompile>
+    <ClCompile Include="SVeffects\sveff16.cpp">
+      <Filter>Source Files\SVeffects</Filter>
+    </ClCompile>
+    <ClCompile Include="SVeffects\sveff17.cpp">
+      <Filter>Source Files\SVeffects</Filter>
+    </ClCompile>
+    <ClCompile Include="SVeffects\sveff18.cpp">
+      <Filter>Source Files\SVeffects</Filter>
+    </ClCompile>
+    <ClCompile Include="SVeffects\sveff19.cpp">
+      <Filter>Source Files\SVeffects</Filter>
+    </ClCompile>
+    <ClCompile Include="SVeffects\sveff20.cpp">
+      <Filter>Source Files\SVeffects</Filter>
+    </ClCompile>
+    <ClCompile Include="SVeffects\sveff21.cpp">
+      <Filter>Source Files\SVeffects</Filter>
+    </ClCompile>
+    <ClCompile Include="SVeffects\sveff22.cpp">
+      <Filter>Source Files\SVeffects</Filter>
+    </ClCompile>
+    <ClCompile Include="SVeffects\sveff23.cpp">
+      <Filter>Source Files\SVeffects</Filter>
+    </ClCompile>
+    <ClCompile Include="SVeffects\sveff24.cpp">
+      <Filter>Source Files\SVeffects</Filter>
+    </ClCompile>
+    <ClCompile Include="SVeffects\sveff25.cpp">
+      <Filter>Source Files\SVeffects</Filter>
+    </ClCompile>
+    <ClCompile Include="SVeffects\sveff26.cpp">
+      <Filter>Source Files\SVeffects</Filter>
+    </ClCompile>
+    <ClCompile Include="SVeffects\sveff27.cpp">
+      <Filter>Source Files\SVeffects</Filter>
+    </ClCompile>
+    <ClCompile Include="Peffects\peff31.cpp">
+      <Filter>Source Files\Peffects</Filter>
+    </ClCompile>
+    <ClCompile Include="Peffects\peff32.cpp">
+      <Filter>Source Files\Peffects</Filter>
+    </ClCompile>
+    <ClCompile Include="Peffects\peff33.cpp">
+      <Filter>Source Files\Peffects</Filter>
+    </ClCompile>
+    <ClCompile Include="Peffects\peff34.cpp">
+      <Filter>Source Files\Peffects</Filter>
+    </ClCompile>
+    <ClCompile Include="Peffects\peff35.cpp">
+      <Filter>Source Files\Peffects</Filter>
+    </ClCompile>
+    <ClCompile Include="Peffects\peff36.cpp">
+      <Filter>Source Files\Peffects</Filter>
+    </ClCompile>
+    <ClCompile Include="Peffects\peff37.cpp">
+      <Filter>Source Files\Peffects</Filter>
+    </ClCompile>
+    <ClCompile Include="Peffects\peff38.cpp">
+      <Filter>Source Files\Peffects</Filter>
+    </ClCompile>
+    <ClCompile Include="Peffects\peff39.cpp">
+      <Filter>Source Files\Peffects</Filter>
+    </ClCompile>
+    <ClCompile Include="Peffects\peff40.cpp">
+      <Filter>Source Files\Peffects</Filter>
+    </ClCompile>
+    <ClCompile Include="Peffects\peff41.cpp">
+      <Filter>Source Files\Peffects</Filter>
+    </ClCompile>
+    <ClCompile Include="Peffects\peff42.cpp">
+      <Filter>Source Files\Peffects</Filter>
+    </ClCompile>
+    <ClCompile Include="Peffects\peff43.cpp">
+      <Filter>Source Files\Peffects</Filter>
+    </ClCompile>
+    <ClCompile Include="Peffects\peff44.cpp">
+      <Filter>Source Files\Peffects</Filter>
+    </ClCompile>
+    <ClCompile Include="Peffects\peff45.cpp">
+      <Filter>Source Files\Peffects</Filter>
+    </ClCompile>
+    <ClCompile Include="Peffects\peff46.cpp">
+      <Filter>Source Files\Peffects</Filter>
+    </ClCompile>
+    <ClCompile Include="Peffects\peff47.cpp">
+      <Filter>Source Files\Peffects</Filter>
+    </ClCompile>
+    <ClCompile Include="Peffects\peff48.cpp">
+      <Filter>Source Files\Peffects</Filter>
+    </ClCompile>
+    <ClCompile Include="Peffects\peff49.cpp">
+      <Filter>Source Files\Peffects</Filter>
+    </ClCompile>
+    <ClCompile Include="Peffects\peff50.cpp">
+      <Filter>Source Files\Peffects</Filter>
+    </ClCompile>
+    <ClCompile Include="Peffects\peff51.cpp">
+      <Filter>Source Files\Peffects</Filter>
+    </ClCompile>
+    <ClCompile Include="Peffects\peff1.cpp">
+      <Filter>Source Files\Peffects</Filter>
+    </ClCompile>
+    <ClCompile Include="Peffects\peff2.cpp">
+      <Filter>Source Files\Peffects</Filter>
+    </ClCompile>
+    <ClCompile Include="Peffects\peff3.cpp">
+      <Filter>Source Files\Peffects</Filter>
+    </ClCompile>
+    <ClCompile Include="Peffects\peff4.cpp">
+      <Filter>Source Files\Peffects</Filter>
+    </ClCompile>
+    <ClCompile Include="Peffects\peff5.cpp">
+      <Filter>Source Files\Peffects</Filter>
+    </ClCompile>
+    <ClCompile Include="Peffects\peff6.cpp">
+      <Filter>Source Files\Peffects</Filter>
+    </ClCompile>
+    <ClCompile Include="Peffects\peff7.cpp">
+      <Filter>Source Files\Peffects</Filter>
+    </ClCompile>
+    <ClCompile Include="Peffects\peff8.cpp">
+      <Filter>Source Files\Peffects</Filter>
+    </ClCompile>
+    <ClCompile Include="Peffects\peff9.cpp">
+      <Filter>Source Files\Peffects</Filter>
+    </ClCompile>
+    <ClCompile Include="Peffects\peff10.cpp">
+      <Filter>Source Files\Peffects</Filter>
+    </ClCompile>
+    <ClCompile Include="Peffects\peff11.cpp">
+      <Filter>Source Files\Peffects</Filter>
+    </ClCompile>
+    <ClCompile Include="Peffects\peff12.cpp">
+      <Filter>Source Files\Peffects</Filter>
+    </ClCompile>
+    <ClCompile Include="Peffects\peff13.cpp">
+      <Filter>Source Files\Peffects</Filter>
+    </ClCompile>
+    <ClCompile Include="Peffects\peff14.cpp">
+      <Filter>Source Files\Peffects</Filter>
+    </ClCompile>
+    <ClCompile Include="Peffects\peff15.cpp">
+      <Filter>Source Files\Peffects</Filter>
+    </ClCompile>
+    <ClCompile Include="Peffects\peff16.cpp">
+      <Filter>Source Files\Peffects</Filter>
+    </ClCompile>
+    <ClCompile Include="Peffects\peff17.cpp">
+      <Filter>Source Files\Peffects</Filter>
+    </ClCompile>
+    <ClCompile Include="Peffects\peff18.cpp">
+      <Filter>Source Files\Peffects</Filter>
+    </ClCompile>
+    <ClCompile Include="Peffects\peff19.cpp">
+      <Filter>Source Files\Peffects</Filter>
+    </ClCompile>
+    <ClCompile Include="Peffects\peff20.cpp">
+      <Filter>Source Files\Peffects</Filter>
+    </ClCompile>
+    <ClCompile Include="Peffects\peff21.cpp">
+      <Filter>Source Files\Peffects</Filter>
+    </ClCompile>
+    <ClCompile Include="Peffects\peff22.cpp">
+      <Filter>Source Files\Peffects</Filter>
+    </ClCompile>
+    <ClCompile Include="Peffects\peff23.cpp">
+      <Filter>Source Files\Peffects</Filter>
+    </ClCompile>
+    <ClCompile Include="Peffects\peff24.cpp">
+      <Filter>Source Files\Peffects</Filter>
+    </ClCompile>
+    <ClCompile Include="Peffects\peff25.cpp">
+      <Filter>Source Files\Peffects</Filter>
+    </ClCompile>
+    <ClCompile Include="Peffects\peff26.cpp">
+      <Filter>Source Files\Peffects</Filter>
+    </ClCompile>
+    <ClCompile Include="Peffects\peff27.cpp">
+      <Filter>Source Files\Peffects</Filter>
+    </ClCompile>
+    <ClCompile Include="Peffects\peff28.cpp">
+      <Filter>Source Files\Peffects</Filter>
+    </ClCompile>
+    <ClCompile Include="Peffects\peff29.cpp">
+      <Filter>Source Files\Peffects</Filter>
+    </ClCompile>
+    <ClCompile Include="Peffects\peff30.cpp">
+      <Filter>Source Files\Peffects</Filter>
+    </ClCompile>
+    <ClCompile Include="context.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Peffects\peff53.cpp">
+      <Filter>Source Files\Peffects</Filter>
+    </ClCompile>
+    <ClCompile Include="Peffects\peff52.cpp">
+      <Filter>Source Files\Peffects</Filter>
+    </ClCompile>
+    <ClCompile Include="Peffects\peff54.cpp">
+      <Filter>Source Files\Peffects</Filter>
+    </ClCompile>
+    <ClCompile Include="Peffects\peff55.cpp">
+      <Filter>Source Files\Peffects</Filter>
+    </ClCompile>
+    <ClCompile Include="log.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DVeffects\dveff16.cpp">
+      <Filter>Source Files\DVeffects</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="sspf.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="sspf.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="context.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="loader.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="p4changelist.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="pch.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="peffect.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="resources.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="rev.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="shuffle.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="sspf.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="threadsafequeue.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="util.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="veffect.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Voronoi\VoronoiDiagramGenerator.h">
+      <Filter>Source Files\Voronoi</Filter>
+    </ClInclude>
+    <ClInclude Include="log.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="safevector.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\types.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <FxCompile Include="Shaders\shaders.fx">
+      <Filter>Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\pixelShader.psh">
+      <Filter>Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\vertexShader.vsh">
+      <Filter>Shaders</Filter>
+    </FxCompile>
+  </ItemGroup>
+</Project>

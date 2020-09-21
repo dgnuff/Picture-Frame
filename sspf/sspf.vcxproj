@@ -1,0 +1,298 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{6E8AEA69-C2EF-4AA2-A7D0-E8F07CB22CB6}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>sspf</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>NotSet</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>NotSet</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_DEBUG;_WINDOWS;NOMINMAX;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>.;Shaders;Voronoi;..\FetchLib;..\Common;..\3rdparty</AdditionalIncludeDirectories>
+      <ExceptionHandling>Async</ExceptionHandling>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>..\3rdparty</AdditionalLibraryDirectories>
+      <AdditionalDependencies>d3d11.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PreBuildEvent>
+      <Command>c:\etc\tccle\tcc.exe /c c:\etc\bin\p4changelist.bat ..
+c:\etc\bin\cat.exe p4changelist.h</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PreprocessorDefinitions>NDEBUG;_WINDOWS;NOMINMAX;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>.;Shaders;Voronoi;..\FetchLib;..\Common;..\3rdparty</AdditionalIncludeDirectories>
+      <WarningLevel>Level3</WarningLevel>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>..\3rdparty</AdditionalLibraryDirectories>
+      <AdditionalDependencies>d3d11.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PreBuildEvent>
+      <Command>c:\etc\tccle\tcc.exe /c c:\etc\bin\p4changelist.bat ..
+c:\etc\bin\cat.exe p4changelist.h</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="context.cpp" />
+    <ClCompile Include="DVeffects\dveff1.cpp" />
+    <ClCompile Include="DVeffects\dveff10.cpp" />
+    <ClCompile Include="DVeffects\dveff11.cpp" />
+    <ClCompile Include="DVeffects\dveff12.cpp" />
+    <ClCompile Include="DVeffects\dveff13.cpp" />
+    <ClCompile Include="DVeffects\dveff14.cpp" />
+    <ClCompile Include="DVeffects\dveff15.cpp" />
+    <ClCompile Include="DVeffects\dveff16.cpp" />
+    <ClCompile Include="DVeffects\dveff2.cpp" />
+    <ClCompile Include="DVeffects\dveff3.cpp" />
+    <ClCompile Include="DVeffects\dveff4.cpp" />
+    <ClCompile Include="DVeffects\dveff5.cpp" />
+    <ClCompile Include="DVeffects\dveff6.cpp" />
+    <ClCompile Include="DVeffects\dveff7.cpp" />
+    <ClCompile Include="DVeffects\dveff8.cpp" />
+    <ClCompile Include="DVeffects\dveff9.cpp" />
+    <ClCompile Include="loader.cpp" />
+    <ClCompile Include="log.cpp" />
+    <ClCompile Include="pch.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="peffect.cpp" />
+    <ClCompile Include="Peffects\peff1.cpp" />
+    <ClCompile Include="Peffects\peff10.cpp" />
+    <ClCompile Include="Peffects\peff11.cpp" />
+    <ClCompile Include="Peffects\peff12.cpp" />
+    <ClCompile Include="Peffects\peff13.cpp" />
+    <ClCompile Include="Peffects\peff14.cpp" />
+    <ClCompile Include="Peffects\peff15.cpp" />
+    <ClCompile Include="Peffects\peff16.cpp" />
+    <ClCompile Include="Peffects\peff17.cpp" />
+    <ClCompile Include="Peffects\peff18.cpp" />
+    <ClCompile Include="Peffects\peff19.cpp" />
+    <ClCompile Include="Peffects\peff2.cpp" />
+    <ClCompile Include="Peffects\peff20.cpp" />
+    <ClCompile Include="Peffects\peff21.cpp" />
+    <ClCompile Include="Peffects\peff22.cpp" />
+    <ClCompile Include="Peffects\peff23.cpp" />
+    <ClCompile Include="Peffects\peff24.cpp" />
+    <ClCompile Include="Peffects\peff25.cpp" />
+    <ClCompile Include="Peffects\peff26.cpp" />
+    <ClCompile Include="Peffects\peff27.cpp" />
+    <ClCompile Include="Peffects\peff28.cpp" />
+    <ClCompile Include="Peffects\peff29.cpp" />
+    <ClCompile Include="Peffects\peff3.cpp" />
+    <ClCompile Include="Peffects\peff30.cpp" />
+    <ClCompile Include="Peffects\peff31.cpp" />
+    <ClCompile Include="Peffects\peff32.cpp" />
+    <ClCompile Include="Peffects\peff33.cpp" />
+    <ClCompile Include="Peffects\peff34.cpp" />
+    <ClCompile Include="Peffects\peff35.cpp" />
+    <ClCompile Include="Peffects\peff36.cpp" />
+    <ClCompile Include="Peffects\peff37.cpp" />
+    <ClCompile Include="Peffects\peff38.cpp" />
+    <ClCompile Include="Peffects\peff39.cpp" />
+    <ClCompile Include="Peffects\peff4.cpp" />
+    <ClCompile Include="Peffects\peff40.cpp" />
+    <ClCompile Include="Peffects\peff41.cpp" />
+    <ClCompile Include="Peffects\peff42.cpp" />
+    <ClCompile Include="Peffects\peff43.cpp" />
+    <ClCompile Include="Peffects\peff44.cpp" />
+    <ClCompile Include="Peffects\peff45.cpp" />
+    <ClCompile Include="Peffects\peff46.cpp" />
+    <ClCompile Include="Peffects\peff47.cpp" />
+    <ClCompile Include="Peffects\peff48.cpp" />
+    <ClCompile Include="Peffects\peff49.cpp" />
+    <ClCompile Include="Peffects\peff5.cpp" />
+    <ClCompile Include="Peffects\peff50.cpp" />
+    <ClCompile Include="Peffects\peff51.cpp" />
+    <ClCompile Include="Peffects\peff52.cpp" />
+    <ClCompile Include="Peffects\peff53.cpp" />
+    <ClCompile Include="Peffects\peff54.cpp" />
+    <ClCompile Include="Peffects\peff55.cpp" />
+    <ClCompile Include="Peffects\peff6.cpp" />
+    <ClCompile Include="Peffects\peff7.cpp" />
+    <ClCompile Include="Peffects\peff8.cpp" />
+    <ClCompile Include="Peffects\peff9.cpp" />
+    <ClCompile Include="sspf.cpp" />
+    <ClCompile Include="SVeffects\sveff1.cpp" />
+    <ClCompile Include="SVeffects\sveff10.cpp" />
+    <ClCompile Include="SVeffects\sveff11.cpp" />
+    <ClCompile Include="SVeffects\sveff12.cpp" />
+    <ClCompile Include="SVeffects\sveff13.cpp" />
+    <ClCompile Include="SVeffects\sveff14.cpp" />
+    <ClCompile Include="SVeffects\sveff15.cpp" />
+    <ClCompile Include="SVeffects\sveff16.cpp" />
+    <ClCompile Include="SVeffects\sveff17.cpp" />
+    <ClCompile Include="SVeffects\sveff18.cpp" />
+    <ClCompile Include="SVeffects\sveff19.cpp" />
+    <ClCompile Include="SVeffects\sveff2.cpp" />
+    <ClCompile Include="SVeffects\sveff20.cpp" />
+    <ClCompile Include="SVeffects\sveff21.cpp" />
+    <ClCompile Include="SVeffects\sveff22.cpp" />
+    <ClCompile Include="SVeffects\sveff23.cpp" />
+    <ClCompile Include="SVeffects\sveff24.cpp" />
+    <ClCompile Include="SVeffects\sveff25.cpp" />
+    <ClCompile Include="SVeffects\sveff26.cpp" />
+    <ClCompile Include="SVeffects\sveff27.cpp" />
+    <ClCompile Include="SVeffects\sveff28.cpp" />
+    <ClCompile Include="SVeffects\sveff29.cpp" />
+    <ClCompile Include="SVeffects\sveff3.cpp" />
+    <ClCompile Include="SVeffects\sveff30.cpp" />
+    <ClCompile Include="SVeffects\sveff31.cpp" />
+    <ClCompile Include="SVeffects\sveff32.cpp" />
+    <ClCompile Include="SVeffects\sveff33.cpp" />
+    <ClCompile Include="SVeffects\sveff34.cpp" />
+    <ClCompile Include="SVeffects\sveff35.cpp" />
+    <ClCompile Include="SVeffects\sveff36.cpp" />
+    <ClCompile Include="SVeffects\sveff37.cpp" />
+    <ClCompile Include="SVeffects\sveff38.cpp" />
+    <ClCompile Include="SVeffects\sveff39.cpp" />
+    <ClCompile Include="SVeffects\sveff4.cpp" />
+    <ClCompile Include="SVeffects\sveff40.cpp" />
+    <ClCompile Include="SVeffects\sveff41.cpp" />
+    <ClCompile Include="SVeffects\sveff42.cpp" />
+    <ClCompile Include="SVeffects\sveff5.cpp" />
+    <ClCompile Include="SVeffects\sveff6.cpp" />
+    <ClCompile Include="SVeffects\sveff7.cpp" />
+    <ClCompile Include="SVeffects\sveff8.cpp" />
+    <ClCompile Include="SVeffects\sveff9.cpp" />
+    <ClCompile Include="util.cpp" />
+    <ClCompile Include="veffect.cpp" />
+    <ClCompile Include="Voronoi\VoronoiDiagramGenerator.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="sspf.rc">
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(SDKS)\win32\include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(SDKS)\win32\include</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="sspf.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Common\types.h" />
+    <ClInclude Include="context.h" />
+    <ClInclude Include="loader.h" />
+    <ClInclude Include="log.h" />
+    <ClInclude Include="p4changelist.h" />
+    <ClInclude Include="pch.h" />
+    <ClInclude Include="peffect.h" />
+    <ClInclude Include="resources.h" />
+    <ClInclude Include="rev.h" />
+    <ClInclude Include="safevector.h" />
+    <ClInclude Include="shuffle.h" />
+    <ClInclude Include="sspf.h" />
+    <ClInclude Include="threadsafequeue.h" />
+    <ClInclude Include="util.h" />
+    <ClInclude Include="veffect.h" />
+    <ClInclude Include="Voronoi\VoronoiDiagramGenerator.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <FxCompile Include="Shaders\pixelShader.psh">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Pixel</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">4.0</ShaderModel>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Pixel</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release|x64'">4.0</ShaderModel>
+      <EntryPointName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">PSmain</EntryPointName>
+      <EntryPointName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">PSmain</EntryPointName>
+      <VariableName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(Filename)</VariableName>
+      <HeaderFileOutput Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(Filename)$(Configuration).hxx</HeaderFileOutput>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </ObjectFileOutput>
+      <VariableName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(Filename)</VariableName>
+      <HeaderFileOutput Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(Filename)$(Configuration).hxx</HeaderFileOutput>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </ObjectFileOutput>
+    </FxCompile>
+    <FxCompile Include="Shaders\shaders.fx">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </FxCompile>
+    <FxCompile Include="Shaders\vertexShader.vsh">
+      <VariableName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(Filename)</VariableName>
+      <HeaderFileOutput Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(Filename)$(Configuration).hxx</HeaderFileOutput>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </ObjectFileOutput>
+      <VariableName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(Filename)</VariableName>
+      <HeaderFileOutput Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(Filename)$(Configuration).hxx</HeaderFileOutput>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </ObjectFileOutput>
+      <EntryPointName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">VSmain</EntryPointName>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Vertex</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">4.0</ShaderModel>
+      <EntryPointName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">VSmain</EntryPointName>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Vertex</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release|x64'">4.0</ShaderModel>
+    </FxCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\FetchLib\FetchLib.vcxproj">
+      <Project>{27316d2e-367e-4f00-a7dc-3f655493affb}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

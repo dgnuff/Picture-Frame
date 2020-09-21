@@ -1,0 +1,7 @@
+data\test2.png
+@data\list.txt
+data\DSC00009.JPG;0,71,1024,576
+data\DSC01095.JPG;185,506,1227,690
+data\angels.jpg;109,148,588,331
+data\hayward_snow.bmp
+
